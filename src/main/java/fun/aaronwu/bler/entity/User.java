@@ -59,5 +59,9 @@ public abstract class User {
     private String uInfo;
     private String uImg;
     private Identity uIdentity;
+
     private List<City> cities;
+    private List<Tag> tags;
+    private List<Message> messages;
+    private List<Job> jobs;
 }

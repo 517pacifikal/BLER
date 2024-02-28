@@ -47,4 +47,5 @@ public class Message {
     private UUID uId;
     private Type mType;
     private String mInfo;
+
 }

@@ -2,6 +2,7 @@ package fun.aaronwu.bler.entity;
 
 import lombok.*;
 
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -17,6 +18,8 @@ import java.util.UUID;
  * jSalary_frequency 薪数
  * jEduBgd 岗位学历要求
  * jQuality 岗位性质，分为实习，校招，社招
+ *
+ * messages 岗位申请产生的信息，可以用来获得申请岗位的用户名单和申请结果
  */
 @Getter
 @Setter
@@ -82,4 +85,6 @@ public class Job {
     private int jSalary_upper;
     private int jSalary_frequency;
     private EduBgd jEduBgd;
+
+    private List<Message>messages;
 }

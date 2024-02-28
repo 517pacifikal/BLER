@@ -1,8 +1,11 @@
 package fun.aaronwu.bler.entity;
 
 import lombok.*;
+import org.springframework.util.DigestUtils;
 
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
+import java.util.List;
 
 /**
  * 应聘者实体类，继承自用户抽象类
@@ -81,4 +84,17 @@ public class Employee extends User{
     private Gender uGender;
     private EduBgd uEduBgd;
 
+    //注册用户的构造函数
+    public Employee(String uEmail, String uPassword, String uName, String uInfo, String uSchool, String uGender, String uEduBgd, List<City> uCity){
+        this.setUEmail(uEmail);
+        //密码使用MD5加密
+        this.setUPassword(DigestUtils.md5DigestAsHex(uPassword.getBytes(StandardCharsets.UTF_8)));
+        this.setUImg("https://aaron-recruitment-website.oss-cn-shanghai.aliyuncs.com/%E9%BB%98%E8%AE%A4icon/user.png");
+        this.setUName(uName);
+        this.setUInfo(uInfo);
+        this.setUSchool(uSchool);
+        this.setUGender(Gender.fromValue(uGender));
+        this.setUEduBgd(EduBgd.fromValue(uEduBgd));
+        this.setCities(uCity);
+    }
 }

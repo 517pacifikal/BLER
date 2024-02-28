@@ -2,6 +2,8 @@ package fun.aaronwu.bler.entity;
 
 import lombok.*;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -16,6 +18,7 @@ import java.util.UUID;
  * uInfo 用户信息
  * uImg 用户图片
  * uIdentity 用户身份
+ * cities 用户所在城市
  */
 @Getter
 @Setter
@@ -56,4 +59,5 @@ public abstract class User {
     private String uInfo;
     private String uImg;
     private Identity uIdentity;
+    private List<City> cities;
 }

@@ -37,6 +37,6 @@ public class Company extends User{
         }
     }
 
-    String uWebsite;
-    Authorize uAuthorized;
+    private String uWebsite;
+    private Authorize uAuthorized;
 }

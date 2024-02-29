@@ -22,4 +22,9 @@ public class Tag {
     private UUID tId;
     private String tName;
     private String tIcon;
+
+    public Tag(String tName){
+        this.tName=tName;
+        this.tIcon="https://aaron-recruitment-website.oss-cn-shanghai.aliyuncs.com/%E9%BB%98%E8%AE%A4icon/file-common.png";
+    }
 }

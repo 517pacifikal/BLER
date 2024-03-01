@@ -6,7 +6,6 @@ import fun.aaronwu.bler.entity.Job;
 import fun.aaronwu.bler.entity.Tag;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.security.core.parameters.P;
 
 import java.util.List;
 import java.util.UUID;

@@ -22,39 +22,39 @@ public interface CityMapper {
      * 插入
      * @param c 城市对象
      */
-    void insert(City c);
+    //void insert(City c);
 
     /**
      * 更新
      * @param c 城市对象
      */
-    void update(City c);
+    //void update(City c);
 
     /**
      * 删除
      * @param c 城市对象
      */
-    void delete(City c);
+    //void delete(City c);
 
     /**
      * 根据ID得到城市
      * @param cId 城市ID
      * @return 城市对象
      */
-    City getOneById(UUID cId);
+    //City getOneById(UUID cId);
 
     /**
      * 根据名称得到城市
      * @param cName 城市名称
      * @return 城市对象
      */
-    City getOneByName(String cName);
+    //City getOneByName(String cName);
 
     /**
      * 获取全部城市
      * @return 城市列表
      */
-    List<City> getAllCities();
+    //List<City> getAllCities();
 
     /**
      * 动态获取企业或者岗位所在的城市
@@ -62,5 +62,5 @@ public interface CityMapper {
      * @param job 岗位对象
      * @return 城市列表
      */
-    List<City> getCityDynamically(@Param("company")Company company, @Param("job")Job job);
+    //List<City> getCityDynamically(@Param("company")Company company, @Param("job")Job job);
 }
